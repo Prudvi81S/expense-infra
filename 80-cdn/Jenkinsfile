@@ -45,7 +45,7 @@ pipeline {
             }
         }
 
-        /* stage('Destroy') {
+        stage('Destroy') {
             when {
                 expression { params.ACTION == 'destroy' }
             }
@@ -72,7 +72,7 @@ pipeline {
                 }
 
             }
-        } */
+        } 
         stage('Destroy'){
             when {
                 expression { params.ACTION == 'destroy' }
@@ -94,7 +94,7 @@ pipeline {
                 }
             }
         }
-        /* stage('Sequential') {
+        stage('Sequential') {
             when {
                 expression { params.ACTION == 'destroy' }
             }
@@ -117,7 +117,7 @@ pipeline {
                 }
             }
                 
-        } */
+        } 
         
     }
 
